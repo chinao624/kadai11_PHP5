@@ -1,0 +1,521 @@
+/* index.php分 */
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 28px;
+    background-color: #e9dacb;
+  }
+
+  /* 画像の固定 */
+#header img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1; /* 他の要素よりも背面に配置 */
+}
+
+/* フォームのスタイル */
+.container {
+  margin-top: 500px; /* 画像の高さ分だけ下にずらす */
+  padding: 20px;
+  background-color: #e9dacb;
+}
+
+  h1 {
+   font-family:  "Josefin Sans", sans-serif;
+    text-align: left;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 100px;
+    color: white;
+    position: absolute;
+    top: 25%;
+    width: 100%;
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      width: 100px;
+      height: 30px;
+      font-size: 16px;
+      font-family: 'Quicksand', sans-serif;
+      background-color: #b79fcb;
+      color: white;
+      border: none;
+      margin:20px;
+    }
+    
+    .btn:hover {
+      background-color: #c0c0c0;
+    }
+  
+    .btn2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+        width: 100px;
+        height: 30px;
+        font-size: 16px;
+        font-family: 'Quicksand', sans-serif;
+        background-color: #418b89;
+        color: white;
+        border: none;
+        margin:20px;
+      }
+
+      .btn2:hover {
+        background-color: #c0c0c0;
+      }
+
+    .login_btn{
+      display: flex;
+      justify-content: flex-start;
+      margin-right: 70px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  
+  h3{
+    font-size:larger;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    justify-content: center;
+  }
+
+  label{
+    font-family: 'Quicksand', sans-serif;
+    line-height: 2
+  }
+
+  .spacer {
+    margin-right: 20px; /* 下側に20pxのマージンを追加 */
+}
+
+
+#wrap {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+  }
+
+
+  #save {
+    margin-top: 40px;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+  }
+
+  #save:hover{
+    background: #db7093;
+    color: #fff;
+  }
+
+  .save_btn{
+    margin:15px;
+  }
+  
+  .tobtn{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 70px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .listbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      width: 200px;
+      height: 30px;
+      font-size: 16px;
+      font-family: 'Quicksand', sans-serif;
+      background-color: #b79fcb;
+      color: white;
+      border: none;
+      margin:20px;
+    }
+
+    /* user登録画面 */
+
+.userfooter{
+  display: flex;
+  justify-content: space-evenly;
+  height: 50px;
+  font-size: 18px;
+  padding-top: 20px;
+  padding-left:20px;
+}
+
+.menu a{
+  margin-right: 100px;
+}
+
+  /* select.php分 */
+ 
+  .select{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 28px;
+    background-color: #fff5ee;
+
+  }
+
+  h2{
+    font-family:  "Josefin Sans", sans-serif;
+    font-style: normal;
+    font-weight:400;
+    font-size:48px;
+    display: flex;
+    justify-content: center;
+    color:#db7093;
+  }
+
+  .list_container {
+    display: flex;
+    justify-content: space-around;
+    margin:20px;
+    font-size: 18px;
+    margin-top: 50px; 
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .list {
+    border: 2px solid #c0c0c0;
+    padding: 10px;
+    margin: 10px;
+    width: 280px;
+  font-family: 'Quicksand', sans-serif;
+  }
+
+  .link{
+    font-size:16px;
+   display: flex;
+   justify-content: space-around;
+   margin-top: 20px;
+  }
+
+  .btnwrap{
+    display:flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+ 
+ 
+ /* travel.php分 */
+
+ .travel_body{
+  background-color: #dcdcdc;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+ }
+
+ #tr_header{
+  position: relative;
+ }
+
+ #tr_header .tr_header {
+	font-size:60px;
+  font-family: 'Caveat', cursive;
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  transform: rotate(-10deg);
+  max-width: 600px;
+  }
+
+
+/* travel写真の表示 */
+.trimg_wrap{
+  margin-top: 300px;
+  display: grid;
+  gap:2rem 1.5rem;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2,1fr);
+  }
+
+  .tr_image{
+    position: relative;
+    display: flex;
+    justify-content:  center;
+    padding: 8px 0;
+    background: #000
+  }
+.tr_image img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.tr_btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #a9a9a9;
+    color: white;
+    border: none;
+    margin:20px;
+}
+
+
+/* food.php分 */
+.food_body{
+  background-color: white;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+ #food_header .food_header {
+	font-size:60px;
+  font-family: 'Montserrat Subrayada', sans-serif;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .foodimg_wrap{
+    margin-top: 100px;
+    display: grid;
+    gap:2rem 1.5rem;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    }
+  
+    .food_image{
+      position: relative;
+      display: flex;
+      justify-content:  center;
+      padding: 8px 0;
+    }
+
+  .food_image img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    display: block;
+  }
+
+  .food_image:hover img {
+  transform: scale(1.1);
+}
+
+/* kids.php分 */
+.kids_body{
+  background-color: white;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+ #kids_header .kids_header {
+	font-size:60px;
+  font-family: "Irish Grover", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .kidsimg_wrap{
+    margin-top: 100px;
+    display: grid;
+    gap:2rem 1.5rem;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    }
+  
+    .kids_image{
+      position: relative;
+      display: flex;
+      justify-content:  center;
+      padding: 8px 0;
+    }
+
+  .kids_image img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    display: block;
+    border-radius: 1em;
+  }
+
+  .kids_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      width: 100px;
+      height: 30px;
+      font-size: 16px;
+      font-family: "Irish Grover", system-ui;
+      background-color: #9932cc;
+      color: white;
+      border: none;
+      margin:20px;
+  }
+  
+  /* pet.php分 */
+  .pet_body{
+    /* グラデーションボーダーにしたい */
+    background-image: linear-gradient(45deg, #f0f8ff, #fff0f5,#e0ffff,#fff8dc, #ffe4e1);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+   #pet_header .pet_header {
+    font-size:60px;
+    font-family: "Slackey", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #e9967a;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    }
+  
+    .petimg_wrap {
+      margin-top: 100px;
+      display: grid;
+      gap:2rem 1.5rem;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows: repeat(2,1fr); } 
+    
+      .pet_image{
+        position: relative; 
+        display: flex; 
+        justify-content: center; 
+        padding: 8px 0; 
+      } 
+  
+    .pet_image img {
+      width: 300px;
+      height: 300px; 
+      object-fit: contain; /* 画像を切り抜かず比を維持 */
+      display: block;
+    }
+  
+    .pet_btn{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+        width: 120px;
+        height: 30px;
+        font-size: 16px;
+        font-family: 'Quicksand', sans-serif;
+        background-color: #e9967a;
+        color: white;
+        border: none;
+        border-radius: 0.5em;
+        margin:20px;
+    }
+
+/* モーダル */
+/* モーダルウィンドウのスタイル */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  display: block;
+  margin: auto;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.close-button {
+  color: white;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+ /* detail.php分 */
+
+ .container2 {
+  margin-top: 100px; 
+  padding: 20px;
+   }
+
+/* ログイン画面 */
+.loginbody{
+  background-color:#f0f8ff;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  min-height: 100vh; 
+}
+
+.login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 2;
+  margin:50px;
+  
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f1f1f1; 
+  padding: 40px; 
+  border-radius: 5px; 
+}
+
+
+
+/* ログアウトボタン */
+.logoutbtn{
+  font-size: 18px;
+  color: #dc143c;
+}
+
+/* ログイン者の名前表示 */
+.headername{
+  font-size:16px;
+  margin-left: 80px;
+}
